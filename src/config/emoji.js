@@ -4,27 +4,27 @@
  */
 export const emoji = {
   // Status Emojis
-  success: '<:discotoolsxyzicon69:1386986828782895255>',
-  error: '<:discotoolsxyzicon70:1386986831626764359>',
-  warning: '<:discotoolsxyzicon87:1386987206257676368>',
-  info: '<:discotoolsxyzicon87:1386987206257676368>',
+  success: '✅',
+  error: '❌',
+  warning: '⚠️',
+  info: 'ℹ️',
   
   // Music Player Emojis
-  playing: '<:Play:1386987269386403933>',
-  paused: '<:pause:1386987259106033684>',
-  stopped: '<:Stop:1386987307869011968>',
-  skipped: '<:skip:1386987304983330946>',
-  previous: '<:Previous:1386987282656919562>',
-  loop: '<:Loop_none:1386987246095175810>',
-  loopOne: '<:Loop_track:1386987251371868230>',
-  shuffle: '<:Shuffle:1386987300017278976>',
-  queue: '<:queue:1386987287807791196>',
-  volume: '<:Vol:1386987310670807111>',
+  playing: '▶️',
+  paused: '⏸️',
+  stopped: '⏹️',
+  skipped: '⏭️',
+  previous: '⏮️',
+  loop: '🔁',
+  loopOne: '🔂',
+  shuffle: '🔀',
+  queue: '📜',
+  volume: '🔊',
   volumeUp: '🔊',
   volumeDown: '🔉',
   volumeMute: '🔇',
-  favorite: '<:discotoolsxyzicon77:1386987170824323073>',
-  unfavorite: '<:discotoolsxyzicon78:1386987173936627784>',
+  favorite: '❤️',
+  unfavorite: '💔',
   
   // Music Content Emojis
   music: '🎵',
@@ -56,6 +56,7 @@ export const emoji = {
   repeat: '🔁',
   repeatOne: '🔂',
   nowPlaying: '🎧',
+  nowPlayingAction: '🎧',
   addToQueue: '➕',
   removeFromQueue: '➖',
   clearQueue: '🧹',
@@ -84,7 +85,7 @@ export const emoji = {
   calendar: '📅',
   
   // System Emojis
-  loading: '<a:loading_red:1386987243427594413>',
+  loading: '⏳',
   settings: '⚙️',
   time: '⏰',
   
