@@ -18,7 +18,7 @@ class InviteCommand extends Command {
   constructor() {
     super({
       name: 'invite',
-      description: 'Want Avon in your server? Use this command to add me!',
+      description: 'Want SynapseBeats in your server? Use this command to add me!',
       usage: 'invite',
       aliases: ['inv', 'add'],
       category: 'information',
@@ -48,7 +48,7 @@ class InviteCommand extends Command {
 
       const row = new ActionRowBuilder().addComponents(inviteButton, supportServer);
    
-      await message.reply({ content: `[Invite Axon Innova](https://dsc.gg/axoninnova)`, components: [row] });
+      await message.reply({ content: `[Invite SynapseBeats](https://dsc.gg/axoninnova)`, components: [row] });
        } catch (error) {
       logger.error('InviteCommand', 'Error executing invite command', error);
      }      

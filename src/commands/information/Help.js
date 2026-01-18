@@ -22,7 +22,7 @@ class HelpCommand extends Command {
   constructor() {
     super({
       name: 'help',
-      description: 'Display help information about ByteCord commands',
+      description: 'Display help information about SynapseBeats commands',
       usage: 'help [command_name] [--msgspeed]',
       aliases: ['h', 'commands'],
       category: 'information',
