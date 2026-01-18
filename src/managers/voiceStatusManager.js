@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import axios from 'axios';
 
@@ -55,7 +55,7 @@ export default class  VoiceStatusManager {
     if (autoplay) {
       status = '<a:byte_loading:1386986717533175869> Fetching related songs, please wait';
     } else {
-      status = is247 ? '<a:EastAnime115:1386987227069808753> Ready to vibe with **Avon**? <a:EastAnime116:1386987230710730853>' : '<:discotoolsxyzicon87:1386987206257676368> Use play command to start playing';
+      status = is247 ? '<a:EastAnime115:1386987227069808753> Ready to vibe with **SynapseBeats**? <a:EastAnime116:1386987230710730853>' : '<:discotoolsxyzicon87:1386987206257676368> Use play command to start playing';
       return this.set(player.voiceId, status);
     }
   }

@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import { Database } from './Database.js';
 import path from 'path';

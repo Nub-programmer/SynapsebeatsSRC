@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import { Guild } from './Guild.js';
 import { User } from './User.js';

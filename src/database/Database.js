@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import BetterSQLite3 from 'better-sqlite3';
 import fs from 'fs-extra';

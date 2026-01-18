@@ -18,7 +18,7 @@ class BotInfoCommand extends Command {
   constructor() {
     super({
       name: 'botinfo',
-      description: 'Displays information about Avon',
+      description: 'Displays information about SynapseBeats',
       usage: 'botinfo',
       aliases: ['info', 'about', 'stats'],
       category: 'information',
@@ -45,7 +45,7 @@ class BotInfoCommand extends Command {
             
             return new ContainerBuilder()
               .addTextDisplayComponents(
-                new TextDisplayBuilder().setContent('<:discotoolsxyzicon79:1386987185236082688> **Avon Stats**')
+                new TextDisplayBuilder().setContent('<:discotoolsxyzicon79:1386987185236082688> **SynapseBeats Stats**')
               )
               .addSeparatorComponents(
                 new SeparatorBuilder()
@@ -92,7 +92,7 @@ class BotInfoCommand extends Command {
           case 'team': {
             return new ContainerBuilder()
               .addTextDisplayComponents(
-                new TextDisplayBuilder().setContent('<:discotoolsxyzicon60:1386986763708268697> **Avon Team**')
+                new TextDisplayBuilder().setContent('<:discotoolsxyzicon60:1386986763708268697> **SynapseBeats Team**')
               )
               .addSeparatorComponents(
                 new SeparatorBuilder()
@@ -126,7 +126,7 @@ class BotInfoCommand extends Command {
                   .setSpacing(SeparatorSpacingSize.Small)
               )
               .addTextDisplayComponents(
-                new TextDisplayBuilder().setContent(`[Invite Avon](https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8)
+                new TextDisplayBuilder().setContent(`[Invite SynapseBeats](https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8)
 [Support Server](https://discord.gg/kyPQmtJaRp)`)
               );
           }

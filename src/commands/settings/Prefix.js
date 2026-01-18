@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import { Command } from '../../structures/Command.js';
 
@@ -25,7 +25,7 @@ class PrefixCommand extends Command {
 
       name: 'prefix',
 
-      description: 'View or change the ByteCord prefix for this server',
+      description: 'View or change the SynapseBeats prefix for this server',
 
       usage: 'prefix [new prefix]',
 

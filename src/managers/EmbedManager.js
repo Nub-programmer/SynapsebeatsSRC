@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import { EmbedBuilder } from 'discord.js';
 import { formatDuration, truncate } from '../utils/formatters.js';
@@ -254,7 +254,7 @@ export class EmbedManager {
       title,
       description,
       image: `https://cdn.discordapp.com/attachments/1300708520106393677/1339112129457946705/Blurrr_1699944980275-ezgif.com-video-to-gif-converter.gif?ex=683de51b&is=683c939b&hm=40af71bf9eeef316947251c18a1608d811747e4675b4d4ae4f989fda8f7dc3d4&`,
-      footer: { text: 'Made with 🧡 by Team Avon' }
+      footer: { text: 'Made with 🧡 by Axon Innova' }
     });
   }
 

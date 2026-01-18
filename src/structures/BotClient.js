@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import {
   Client,
@@ -111,7 +111,7 @@ export class BotClient extends Client {
 
   async init() {
     try {
-      this.logger.info('ByteCord', `Initializing bot (Cluster ${this.cluster.id})...`);
+      this.logger.info('SynapseBeats', `Initializing bot (Cluster ${this.cluster.id})...`);
       
       // Configure websocket options
       DefaultWebSocketManagerOptions.identifyProperties.browser = 'Discord iOS';
@@ -141,10 +141,10 @@ export class BotClient extends Client {
       // Start periodic status checks
       this.startStatusMonitoring();
 
-      this.logger.success('ByteCord', `Cluster ${this.cluster.id} initialized successfully`);
+      this.logger.success('SynapseBeats', `Cluster ${this.cluster.id} initialized successfully`);
       return true;
     } catch (error) {
-      this.logger.error('ByteCord', 'Failed to initialize bot', error);
+      this.logger.error('SynapseBeats', 'Failed to initialize bot', error);
       process.exit(1); // Exit with error to allow cluster manager to restart
     }
   }
@@ -192,25 +192,25 @@ export class BotClient extends Client {
 
   async reload() {
     try {
-      this.logger.info('ByteCord', 'Reloading commands and events...');
+      this.logger.info('SynapseBeats', 'Reloading commands and events...');
       await this.eventHandler.reloadEvents();
       await this.commandHandler.reloadCommands();
-      this.logger.success('ByteCord', 'Reloaded commands and events successfully');
+      this.logger.success('SynapseBeats', 'Reloaded commands and events successfully');
       return true;
     } catch (error) {
-      this.logger.error('ByteCord', 'Failed to reload commands and events', error);
+      this.logger.error('SynapseBeats', 'Failed to reload commands and events', error);
       return false;
     }
   }
 
   async cleanup() {
     try {
-      this.logger.info('ByteCord', 'Cleaning up before shutdown...');
+      this.logger.info('SynapseBeats', 'Cleaning up before shutdown...');
       clearInterval(this.statusInterval);
 
       const activePlayers = this.music.kazagumo?.players?.size || 0;
       if (activePlayers > 0) {
-        this.logger.info('ByteCord', `Saving state for ${activePlayers} active players`);
+        this.logger.info('SynapseBeats', `Saving state for ${activePlayers} active players`);
 
         for (const [guildId, player] of this.music.kazagumo.players) {
           try {
@@ -230,7 +230,7 @@ export class BotClient extends Client {
                 );
               }
             } catch (queueError) {
-              this.logger.warn('ByteCord', `Could not extract queue for guild ${guildId}`, queueError);
+              this.logger.warn('SynapseBeats', `Could not extract queue for guild ${guildId}`, queueError);
             }
 
             this.db.savePlayerState(guildId, {
@@ -245,15 +245,15 @@ export class BotClient extends Client {
 
             player.destroy();
           } catch (playerError) {
-            this.logger.error('ByteCord', `Failed to save state for player in guild ${guildId}`, playerError);
+            this.logger.error('SynapseBeats', `Failed to save state for player in guild ${guildId}`, playerError);
           }
         }
       }
 
       await this.db.closeAll();
-      this.logger.success('ByteCord', 'Cleanup completed successfully');
+      this.logger.success('SynapseBeats', 'Cleanup completed successfully');
     } catch (error) {
-      this.logger.error('ByteCord', 'Error during cleanup', error);
+      this.logger.error('SynapseBeats', 'Error during cleanup', error);
     }
   }
 
@@ -271,7 +271,7 @@ export class BotClient extends Client {
         requester: track.requester
       };
     } catch (e) {
-      this.logger.warn('ByteCord', 'Failed to clean track for storage', e);
+      this.logger.warn('SynapseBeats', 'Failed to clean track for storage', e);
       return null;
     }
   }

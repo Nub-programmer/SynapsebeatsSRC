@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import { Command } from '../../structures/Command.js';
 import { embedManager } from '../../managers/EmbedManager.js';
@@ -15,7 +15,7 @@ class Stay247Command extends Command {
   constructor() {
     super({
       name: '247',
-      description: 'Enable or disable 24/7 mode for ByteCord in this server',
+      description: 'Enable or disable 24/7 mode for SynapseBeats in this server',
       usage: '247 [on|off]',
       aliases: ['stay', '24/7', 'stayin'],
       category: 'music',

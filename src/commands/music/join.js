@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import { Command } from '../../structures/Command.js';
 import { PlayerManager } from '../../managers/PlayerManager.js';
@@ -163,4 +163,4 @@ class JoinCommand extends Command {
 export default new JoinCommand();
 
 // coded by bre4d777
-// with little help of prayag.exe
+// with little help of Axon Team.exe

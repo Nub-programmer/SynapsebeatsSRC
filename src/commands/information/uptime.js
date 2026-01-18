@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
+ * SynapseBeats
  */
 import { Command } from '../../structures/Command.js';
 import { embedManager } from '../../managers/EmbedManager.js';
@@ -15,7 +15,7 @@ class UptimeCommand extends Command {
   constructor() {
     super({
       name: 'uptime',
-      description: 'Check Avon\'s and Lavalink\'s uptime plus system info',
+      description: 'Check SynapseBeats\'s and Lavalink\'s uptime plus system info',
       usage: 'uptime',
       aliases: ['up', 'online'],
       category: 'information',
@@ -52,14 +52,14 @@ class UptimeCommand extends Command {
       }
 
       const finalEmbed = embedManager.create({
-        title: 'Avon & Lavalink Uptime Info',
+        title: 'SynapseBeats & Lavalink Uptime Info',
         description: [
-          `• Avon Uptime: <t:${Math.floor((Date.now() - uptime) / 1000)}:R>`,
+          `• SynapseBeats Uptime: <t:${Math.floor((Date.now() - uptime) / 1000)}:R>`,
           `• Lavalink Uptime: <t:${Math.floor((Date.now() - nodeUptime) / 1000)}:R>`,
           uptimeInfo,
         ].join('\n'),
         color: embedManager.colors.success,
-        footer: { text: 'Made with 🧡 by Team Avon' },
+        footer: { text: 'Made with 🧡 by Axon Innova' },
         timestamp: true
       });
 
