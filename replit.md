@@ -1,55 +1,47 @@
-# Avon Discord Music Bot
+# SynapseBeats Discord Bot
+
+A highly modular Discord music bot using Shoukaku and Kazagumo with Lavalink integration.
 
 ## Overview
-A highly modular Discord music bot using Shoukaku and Kazagumo with Lavalink integration. The bot supports music playback from various sources including Spotify, Deezer, and Apple Music.
+SynapseBeats is a high-performance music bot designed for Discord, featuring dynamic image generation for "Now Playing" cards and advanced playlist management.
 
 ## Project Structure
 ```
 src/
 ├── commands/          - Bot commands (info, music, misc)
-├── config/            - Configuration files
-│   ├── config.js      - Main config (token, Lavalink nodes, Spotify)
-│   ├── emoji.js       - Emoji configurations
-│   └── radio.js       - Radio station presets
-├── database/          - SQLite database handlers
-├── events/            - Discord event handlers
-├── managers/          - Core managers (Music, Player, Queue, etc.)
-├── structures/        - Bot client and command structures
-├── utils/             - Utility functions
+├── config/            - Configuration files (config.js, emoji.js, radio.js)
+├── database/          - SQLite database handlers (Better-SQLite3)
+├── events/            - Discord and Kazagumo event handlers
+├── managers/          - Core logic managers (Music, Player, Queue, Embed, etc.)
+├── structures/        - Bot client, command, and canvas structures
+├── utils/             - Utility functions and logger
 ├── index.js           - Main bot entry point
-└── shard.js           - Shard manager (entry point)
+└── shard.js           - Shard manager (entry point for scaling)
 ```
+
+## Features
+- **Dynamic Image Generation**: Uses `@napi-rs/canvas` to create custom "Now Playing" cards with glassmorphism effects.
+- **Music Playback**: High-quality streaming from Spotify, YouTube, SoundCloud, and Deezer.
+- **Advanced Queue**: Support for shuffling, looping, and autoplay.
+- **Playlists**: Create and manage custom music playlists stored in SQLite.
+- **Branding**: Fully customized for **Axon Innova**.
 
 ## Environment Variables
 - `DISCORD_TOKEN` - (Required) Your Discord bot token
-- `BOT_PREFIX` - (Optional) Command prefix, defaults to `.`
-- `OWNER_IDS` - (Optional) Comma-separated Discord user IDs for bot owners
+- `BOT_PREFIX` - (Optional) Command prefix, defaults to `s.`
+- `OWNER_IDS` - (Optional) Discord user IDs for bot owners
 
 ## Running the Bot
 ```bash
 npm start
 ```
 
-## Development
-```bash
-npm run dev
-```
-
-## Requirements
-- Node.js v18+
-- A valid Discord bot token
-- Lavalink server (pre-configured with public node)
-
-## Databases
-Uses SQLite databases stored in `./database/`:
-- guild.db - Server settings
-- user.db - User preferences
-- player.db - Player states
-- spotify.db - Spotify integration data
-- premium.db - Premium features
+## Credits
+- **Founder**: Atharv
+- **Developed by**: [Axon Innova](https://dsc.gg/axoninnova)
+- **Invite**: [dsc.gg/axoninnova](https://dsc.gg/axoninnova)
 
 ## Recent Changes
-- 2026-01-18: Initial Replit setup
-  - Updated config.js to use environment variables
-  - Created .gitignore for Node.js
-  - Set up workflow for running the bot
+- 2026-01-18: Rebranded to **SynapseBeats**.
+- 2026-01-18: Updated status to "s.help for help | s. prefix".
+- 2026-01-18: Consolidated documentation and updated branding in code headers.
