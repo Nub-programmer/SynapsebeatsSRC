@@ -1,7 +1,7 @@
 /**
- * TRINOX STUDIO - Bre4d777
+ * Axon Innova - Atharv
+ * https://dsc.gg/axoninnova
  * give credits or ill touch you in your dreams
- * LEAKED BY CODEX
  */
 import { ActivityType } from 'discord.js';
 import { logger } from '../../utils/logger.js';
@@ -31,7 +31,7 @@ export default {
     const updateStatus = () => {
       let members = guilds.cache.reduce((acc, g) => acc + g.memberCount, 0);
       user.setActivity({
-        name: `Leaked by CodeX`,
+        name: `s.help for help | s. prefix`,
         type: getStatusType(config.status.type),
       });
     };
