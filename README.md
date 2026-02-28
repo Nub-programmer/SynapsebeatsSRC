@@ -1,4 +1,4 @@
-# 🎵 SynapseBeats
+# 🎵 SynapseBeatsDiscord
 ### The Future of Discord Music Bots
 
 High-fidelity audio • Modern Slash Commands • Powerful Filters  
